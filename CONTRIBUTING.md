@@ -29,7 +29,7 @@ git clone https://github.com/voideditor/void
 npm install
 ```
 
-4. Build the project. We created this build command so that we could run React in vscode - it converts `sidebar/index.tsx` into a CSS/JS bundle in `dist/`.
+4. Compile the React by running `npm run build`. We created this build command to convert `sidebar/index.tsx` into `dist/`.
 
 ```
 npm run build
@@ -77,6 +77,8 @@ Now that you're set up, feel free to check out our [Issues](https://github.com/v
 **Common Fixes:**
 
 - Make sure you have the same NodeJS version as `.nvmrc`.
+
+- If you see `X [ERROR] Cannot start service: Host version "0.23.1" does not match binary version "0.23.0"`, run `npm i -D esbuild@0.23.0`
 
 ### b. Building on Windows
 
